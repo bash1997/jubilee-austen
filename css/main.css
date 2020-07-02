@@ -5,63 +5,94 @@ body {
 }
 
 #about, #work, #contact {
-  height: 600px;
+  height: auto;
 }
 
 /***** GRID *****/
 .full-width {
-  width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
   margin: 0 auto;
 }
 
 .half-width {
-  width: 600px;
-  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
 }
 
 .third-width {
-  width: 400px;
-  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
 }
 /***** HEADER ****/
+.tophead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
 header {
-  height: 800px;
   background: url('../img/hero.png');
   background-size: cover;
+  padding: 0 1.56rem;
 }
 
 header h1 {
-  padding: 65px 0 65px 25px;
+  padding: 0 0 4.06rem 1.56rem;
   color: #bbc085;
   font-family: 'Lora', serif;
-  font-size: 30px;
+  font-size: 4.19em;
+  width: 50%;
+  margin: 2.625rem 0;
 }
 
-nav {
-  float: right;
-  padding: 75px 25px;
+.topnav {
+  overflow: hidden;
+  position: relative;
+  width: 10%;
+  padding: 0 1.56rem 4.06rem 0;
+  margin: 2.625rem 0;
 }
 
-nav ul li{
-  display: inline-block;
+.topnav #myLinks{
+  display: none;
 }
 
-nav ul li a {
+.fa-lg {
+  padding: .3125rem;
+}
+
+.topnav a {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 2em;
   color: #828282;
-  padding-left: 80px;
+  padding: .875rem 1rem;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #bbc085;
+  display: block;
 }
 
 header h2 {
-  width: 1000px;
+  width: 62.5rem;
   clear: both;
   font-family: 'Lora', serif;
-  font-size: 72px;
-  line-height: bold;
+  font-size: 4.5em;
   color: #9b9b9b;
-  padding: 20px 0 20px 25px;
+  padding: 1.25rem 0 1.25rem 1.5625rem;
 }
 
 header h2 span {
@@ -70,21 +101,21 @@ header h2 span {
 
 /***** ABOUT SECTION *****/
 #about .full-width {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 
 #about h2 {
   font-family: 'Lora', serif;
-  font-size: 36px;
-  padding-left:50px;
+  font-size: 4em;
+  padding-left:3.125rem;
 }
 
 #about p {
-  font-size:21px;
+  font-size:3.125em;
   color:#7f7f7f;
-  line-height:40px;
-  padding-left:50px;
-  padding-right:50px;
+  line-height:3.85rem;
+  padding-left:3.125rem;
+  padding-right:3.125rem;
 }
 
 /***** WORK SECTION *****/
@@ -95,26 +126,28 @@ header h2 span {
 }
 
 #work .full-width {
-  padding: 115px 0;
+  padding: 7.1875rem 0;
+}
+
+#work .third-width {
+  margin: auto;
 }
 
 #work img {
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+  width: 25%;
 
 }
 
  #work h3 {
-  font-size: 24px;
-  line-height: 32px;
-  width: 190px;
-  margin: 0 auto;
+  font-size: 3.75em;
+  width: 100%;
 }
 
 #work p {
   font-family: 'Lora', serif;
-  font-size: 18px;
-  line-height: 30px;
-  padding: 0 50px;
+  font-size: 3.125em;
+  padding: 0 3.125rem;
 }
 
 /***** CONTACT SECTION *****/
@@ -122,59 +155,65 @@ header h2 span {
   background-color: #ebebeb;
 }
 #contact .full-width {
-  padding: 110px 0;
+  padding: 6.875rem 0;
 }
 
 #contact img#contact-img {
-  margin-left: 25px;
-  border: 12px solid #ffffff;
-}
-
-#contact h2, #contact #email-header, #contact, #socialmedia-header,
-#contact ul {
-  padding-left: 115px;
+  border: .75rem solid #ffffff;
+  width: 85%;
 }
 
 #contact h2 {
   font-family: 'Lora', serif;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 3.75em;
+  line-height: 2.75rem;
+  margin-bottom: 0;
 }
 
 #contact #envelope {
-  padding: 0 10px 0 115px;
+  width: 10%;
 }
 
 #contact #email-header {
-  font-size: 32px;
+  font-size: 3em;
   font-weight: normal;
-  line-height: 44px;
-  margin: -30px 0 5px 0;
+  line-height: 2.75rem;
 }
 
 #contact #socialmedia-header {
   font-weight: bold;
-  font-size: 29px;
-  line-height: 44px;
-  margin: 40px 0 0 0;
+  font-size: 3em;
+  line-height: 2.75rem;
+  margin: 2.5rem 0 0 0;
 }
 
 #contact a {
   text-decoration: none;
   color: #c49075;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 3.8125em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#contact ul {
-  list-style: none;
+#socialicon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-width: 3rem;
+  padding: 0 .3125rem;
 }
 
-#contact ul li {
-  display: inline-block;
+#socialicon img {
+  width: 100%;
+  min-width: 3rem;
+  height: 5.85rem;
 }
 
-#contact ul img {
-  font-size: 32px;
-  padding-right: 48px;
+#socialicon p {
+  width: 10%;
+  padding: 1.25rem 2.5rem;
 }
