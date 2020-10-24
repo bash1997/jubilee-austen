@@ -3,28 +3,40 @@
     <head>
         <title>Jubilee Austen | Portfolio</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/newmain.css">
+        <link rel="stylesheet" media="only screen and (min-width: 700px)" href="css/tabstyle.css">
+        <link rel="stylesheet" media="only screen and (min-width: 1000px)" href="css/deskstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
         rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap"
         rel="stylesheet" type="text/css">
         <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
     </head>
     <body>
       <header>
         <div class="full-width">
           <div class="half-width">
             <h1>Jubilee Austen</h1>
-          </div>
-          <div class="half-width">
-            <nav>
-              <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+            <button id="button">
+              Menu
+            </button>
+            <nav id="navMenu">
+              <div class="list">
+                <a href="#about">
+                  About
+                </a>
+                <a href="#work">
+                  Work
+                </a>
+                <a href="#contact">
+                   Contact
+                </a>
+            </div>
+          </nav>
           <h2><span>Hi,</span> I'm a developer that loves clean
             &amp; elegant code.</h2>
         </div>
@@ -92,26 +104,30 @@
                 hi@julibeeausten.com
               </a>
               <h3 id="socialmedia-header"> Or, find me on the interwebs.</h3>
-              <ul>
-                <li><a href="https://www.google.com">
+              <div id="socialicon">
+                <p><a href="https://www.google.com">
                   <img src="img/instagram-icon.png" alt="Instagram icon"/>
-                </a></li>
-                <li><a href="https://www.google.com">
+                </a></p>
+                <p><a href="https://www.google.com">
                   <img src="img/twitter-icon.png" alt="Twitter icon"/>
-                </a></li>
-                <li><a href="https://www.google.com">
+                </a></p>
+                <p><a href="https://www.google.com">
                   <img src="img/tumblr-icon.png" alt="Tumblr icon"/>
-                </a></li>
-                <li><a href="https://www.google.com">
+                </a></p>
+                <p><a href="https://www.google.com">
                   <img src="img/linked-in.png" alt="LinkedIn icon"/>
-                </a></li>
-                <li><a href="https://www.google.com">
+                </a></p>
+                <p><a href="https://www.google.com">
                   <img src="img/git-hub.png" alt="GitHub icon"/>
-                </a></li>
-              </ul>
+                </a></p>
+              </div>
             </div>
           </div>
         </footer>
       </main>
+      <script type="text/javascript" src="js/nav.js">
+
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>
